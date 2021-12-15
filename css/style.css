@@ -232,6 +232,10 @@ margin-top: -40px;
 .single_image:hover div.image_overlay{
 	opacity: 1;
 }
+.single_image:target img:hover {
+	height: 200%;
+	width: 200%;
+}
 
 .image_overlay{
 position: absolute;
@@ -342,15 +346,10 @@ font-size: 18px;
 letter-spacing: 3px;
 margin-bottom: 1px;	
 }
-.single_contact_info p{
-font-size: 15px;
+.single_contact_info p, a{
+font-size: 18px;
 color: #3d3d3d;	
 }
-
-
-
-
-
 
 .contact-form{
 background-color: #f1f1f1;
