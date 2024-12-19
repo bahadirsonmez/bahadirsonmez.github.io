@@ -447,3 +447,50 @@ letter-spacing: 0px;
 	font-weight:700;
 	text-decoration:none;
 	}
+
+.single_app {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.single_app:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.app_preview {
+    position: relative;
+    padding: 20px;
+}
+
+.app_preview img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.app_info {
+    padding: 20px 0;
+}
+
+.app_info h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app_info h4 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.app_info p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+}
