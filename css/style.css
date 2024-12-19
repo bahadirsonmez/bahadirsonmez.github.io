@@ -1,5 +1,8 @@
 body{
 	font-family: 'Dosis', sans-serif;
+	will-change: scroll-position;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden;
 }
 p{
 	font-family: 'Montserrat', sans-serif;
@@ -493,4 +496,11 @@ letter-spacing: 0px;
     color: #888;
     font-size: 14px;
     line-height: 1.6;
+}
+
+/* Animasyonlar için hardware acceleration */
+.wow {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }

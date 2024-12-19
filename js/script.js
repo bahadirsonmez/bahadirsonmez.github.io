@@ -1,4 +1,3 @@
-
 //SMOOTH PAGE SCROLL
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -46,6 +45,16 @@ $(document).ready(
     	cursorborder:"1px solid #f74d65",
     	horizrailenabled: "false",
     	cursorborderradius: "0px"
+    });
+
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this.hash);
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 70
+            }, 800, 'easeInOutQuad');
+        }
     });
 
   }

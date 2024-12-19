@@ -42,6 +42,19 @@
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+    <!-- Kritik CSS'leri inline olarak ekleyelim -->
+    <style>
+        /* Temel stil tanımlamaları buraya */
+        body { opacity: 0; transition: opacity 0.3s ease-in; }
+        .loaded { opacity: 1; }
+    </style>
+    
+    <!-- CSS dosyalarını asenkron yükleyelim -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Diğer CSS dosyaları... -->
 </head>
 
 <body>
@@ -351,10 +364,22 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nicescroll.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- Scroll işlemleri için daha optimize bir yaklaşım -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sayfa yüklendiğinde
+        document.body.classList.add('loaded');
+        
+        // Scroll performansı için passive event listener
+        document.addEventListener('scroll', function() {
+            // Scroll işlemleri
+        }, { passive: true });
+    });
+    </script>
 
 </body>
 
