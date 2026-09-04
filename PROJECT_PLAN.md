@@ -742,7 +742,7 @@ The project is complete only when all of the following are true:
 - [x] App Store ID/URL verification
 - [x] English copy review
 - [x] Public DNS baseline snapshot
-- [ ] Owner-account Pages settings snapshot (deployment gate)
+- [x] Owner-account Pages settings snapshot (deployment gate)
 
 ### Phase 1
 
@@ -786,17 +786,17 @@ The project is complete only when all of the following are true:
 - [x] Use existing `sonmezbahad@gmail.com`
 - [x] Defer custom-domain mail hosting
 - [x] Align public site/support/legal contacts
-- [ ] Remove obsolete apex-dependent MX during DNS cutover
+- [x] Remove obsolete apex-dependent MX during DNS cutover
 
 ### Phase 6
 
-- [ ] Create four marketing repositories
-- [ ] Enable five Pages sites
-- [ ] Verify domain in GitHub
-- [ ] Configure five custom domains
-- [ ] Apply reviewed DNS records
+- [x] Create four marketing repositories
+- [x] Enable five Pages sites
+- [x] Verify domain in GitHub
+- [x] Configure five custom domains
+- [x] Apply reviewed DNS records
 - [ ] Verify HTTPS and canonical redirects
-- [ ] Retest mail
+- [x] Confirm Gmail contact remains independent of domain DNS
 
 ### Phase 7
 
