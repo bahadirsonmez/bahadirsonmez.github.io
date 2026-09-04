@@ -810,12 +810,28 @@ The project is complete only when all of the following are true:
 
 ### Phase 8
 
-- [ ] Main-site release
-- [ ] App-site releases
+- [x] Main-site release
+- [x] App-site releases
 - [ ] Social profile link update
 - [ ] App Store Connect URL update
 - [ ] 48-hour observation
 - [ ] Maintenance handoff
+
+### Phase 9 — Search visibility
+
+- [x] Technical SEO audit across all five sites
+- [x] Canonical, sitemap, duplicate legal, download noindex, and 404 cleanup
+- [x] SoftwareApplication, Person, WebSite, ProfilePage, and FAQ structured data
+- [x] Consistent Open Graph and Twitter metadata
+- [x] Four high-intent discovery pages with internal links and real screenshots
+- [x] Cross-site app and developer navigation
+- [x] SEO and backlink outreach playbook
+- [x] Live HTTP 200 and deployed metadata verification
+- [ ] Google Search Console domain property verification
+- [ ] Submit and validate all five sitemaps in Search Console
+- [ ] Request indexing for the five homepages and four discovery pages
+- [ ] Update App Store Connect marketing and privacy URLs
+- [ ] Establish the first Search Console query/CTR baseline after indexing
 
 ## 13. Decision log
 
