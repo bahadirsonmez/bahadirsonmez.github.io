@@ -841,6 +841,15 @@ The project is complete only when all of the following are true:
 - [x] Deploy all five sites and verify each live beacon token
 - [ ] Review the first traffic and referrer baseline after data begins appearing
 
+### Phase 11 — App Store screenshot carousels
+
+- [x] Replace static showcase imagery with optimized App Store screenshot sets
+- [x] Add separate iPhone and iPad rails where both real source sets exist (iKeep and Bubbles)
+- [x] Keep iPhone-only rails where no real iPad source set exists (Ballance and HealthBar)
+- [x] Add continuous infinite movement, manual touch/mouse/trackpad/keyboard scrolling, and 3.5-second auto-resume
+- [x] Respect reduced-motion preferences and lazy-load off-screen images
+- [x] Verify JavaScript, asset references, carousel movement, and representative layouts locally
+
 ## 13. Decision log
 
 | Date | Decision | Rationale | Status |
