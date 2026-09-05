@@ -827,9 +827,9 @@ The project is complete only when all of the following are true:
 - [x] Cross-site app and developer navigation
 - [x] SEO and backlink outreach playbook
 - [x] Live HTTP 200 and deployed metadata verification
-- [ ] Google Search Console domain property verification
-- [ ] Submit and validate all five sitemaps in Search Console
-- [ ] Request indexing for the five homepages and four discovery pages
+- [x] Google Search Console domain property verification
+- [x] Submit and validate all five sitemaps in Search Console (`Success`, 2026-09-05)
+- [ ] Request indexing for the five homepages and four discovery pages — blocked until GitHub Pages finishes issuing valid HTTPS certificates; Search Console live test currently reports `Invalid server SSL certificate`
 - [ ] Update App Store Connect marketing and privacy URLs
 - [ ] Establish the first Search Console query/CTR baseline after indexing
 
