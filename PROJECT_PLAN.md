@@ -837,7 +837,7 @@ The project is complete only when all of the following are true:
 ### Phase 10 — Privacy-first web analytics
 
 - [x] Create separate Cloudflare Web Analytics sites for the portfolio and four app hostnames
-- [x] Add the correct beacon to home, discovery, and App Store download-intent pages
+- [x] Add the correct beacon to home and discovery pages
 - [x] Deploy all five sites and verify each live beacon token
 - [ ] Review the first traffic and referrer baseline after data begins appearing
 
@@ -858,6 +858,7 @@ The project is complete only when all of the following are true:
 | 2026-09-04 | Configure email before web DNS cutover | Prevents an apex-domain change from breaking the new mailbox or existing mail routing | Approved |
 | 2026-09-04 | Defer Checkdomain Mail M and use Gmail | Avoids adding mail hosting during the initial website release | Approved; no purchase made |
 | 2026-09-04 | Root agent decides/reviews; subagents implement bounded work | Enables parallel delivery while preserving consistency and quality control | Approved |
+| 2026-09-05 | Remove branded `/download/` interstitials and link directly to App Store | Eliminates an unnecessary extra step; no legacy links had been shared | Approved |
 
 ## 14. Open decisions and dependencies
 
