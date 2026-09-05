@@ -366,7 +366,8 @@ Each app site will include its verified App Store ID in the `apple-itunes-app` m
 ### Analytics and privacy
 
 - No third-party redirect service is required.
-- Any analytics must be privacy-conscious and separately approved.
+- Cloudflare Web Analytics is approved and enabled with a separate site/token for the portfolio and each app hostname.
+- Tracking is limited to the home, discovery, and App Store download-intent pages; legal and 404 pages are excluded.
 - If tracking parameters are retained, document them and avoid placing personal data in URLs.
 
 ### Deliverables
@@ -832,6 +833,13 @@ The project is complete only when all of the following are true:
 - [ ] Request indexing for the five homepages and four discovery pages — blocked until GitHub Pages finishes issuing valid HTTPS certificates; Search Console live test currently reports `Invalid server SSL certificate`
 - [ ] Update App Store Connect marketing and privacy URLs
 - [ ] Establish the first Search Console query/CTR baseline after indexing
+
+### Phase 10 — Privacy-first web analytics
+
+- [x] Create separate Cloudflare Web Analytics sites for the portfolio and four app hostnames
+- [x] Add the correct beacon to home, discovery, and App Store download-intent pages
+- [x] Deploy all five sites and verify each live beacon token
+- [ ] Review the first traffic and referrer baseline after data begins appearing
 
 ## 13. Decision log
 
