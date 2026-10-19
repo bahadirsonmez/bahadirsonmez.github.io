@@ -112,6 +112,37 @@ h2 em{font-style:normal}
 .card-store:hover{transform:scale(1.06)}
 .card-store img{width:142px;height:48px}
 
+/* Featured new app: full-width horizontal card above the grid. Indigo frame; the art panel borrows
+   Chengel's design language (paper blue, hairline crossword grid, square letter cells and solid blocks). */
+.app-feature{grid-column:1/-1;position:relative;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);border:1.5px solid var(--black);overflow:hidden;isolation:isolate}
+.app-feature .card-arrow{position:absolute;top:24px;right:24px}
+.app-feature:hover .card-arrow{transform:rotate(45deg) scale(1.1);background:var(--highlight);color:#000}
+.feature-art{position:relative;display:grid;place-items:center;min-height:380px}
+.feature-art img{width:clamp(150px,18vw,220px);height:auto;aspect-ratio:1;border-radius:23%;border:1.5px solid var(--black);transition:transform .5s var(--bounce)}
+.app-feature:hover .feature-art img{transform:scale(1.08) rotate(-5deg)}
+.feature-copy{padding:clamp(1.5rem,4vw,3.5rem);padding-right:clamp(1.5rem,6vw,5.5rem);display:flex;flex-direction:column;justify-content:center}
+.feature-tags{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-bottom:1.1rem}
+.feature-tags p{margin:0}
+.feature-new{display:inline-flex;align-items:center;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4rem .85rem;border-radius:30px;border:1.5px solid var(--black)}
+.app-feature h3{font-size:clamp(2.6rem,5vw,64px);line-height:1;letter-spacing:-.045em;margin-bottom:.8rem}
+.feature-copy>p{max-width:520px;margin:0;font-family:var(--serif);font-size:clamp(1.1rem,1.6vw,1.3rem);line-height:1.36;letter-spacing:-.015em}
+.feature-a{background:var(--indigo);color:var(--white)}
+.feature-a .feature-art{background-color:#ecf2fe;background-image:linear-gradient(#cadbfc 1px,transparent 1px),linear-gradient(90deg,#cadbfc 1px,transparent 1px);background-size:56px 56px;background-position:center;border-right:1.5px solid var(--black)}
+.feature-a .feature-art img{box-shadow:0 10px 28px -12px rgba(0,1,49,.35)}
+.feature-a h3{color:var(--white)}
+.feature-a .feature-copy>p{color:rgba(255,255,255,.88)}
+.feature-a .feature-new{background:#f4bd3f;color:#000}
+.feature-a .feature-new .status-dot{background:var(--crimson)}
+.feature-tile{position:absolute;display:grid;place-items:center;width:58px;height:58px;border:2.5px solid #000131;background:#f8faff;color:#000131;font-family:var(--sans);font-weight:700;font-size:1.8rem;line-height:1}
+.feature-tile.ft1{left:11%;top:15%;transform:rotate(-6deg)}
+.feature-tile.ft2{right:12%;top:20%;transform:rotate(5deg)}
+.feature-tile.ft3{left:18%;bottom:13%;transform:rotate(4deg)}
+.feature-tile.ft4{right:18%;bottom:15%;width:44px;height:44px;background:#000131;transform:rotate(-4deg)}
+.feature-cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--tangerine);color:var(--white);padding:.85rem 1.8rem;border-radius:30px;font-weight:700;transition:transform var(--t) var(--bounce)}
+.feature-cta:hover{transform:scale(1.06)}
+.feature-cta span{display:inline-block;transition:transform var(--t) var(--ease)}
+.feature-cta:hover span{transform:translate(3px,-3px)}
+
 /* Journey: hairline ledger */
 .journey-section{background:var(--white);border-top:1.5px solid var(--black);border-bottom:1.5px solid var(--black)}
 .timeline{list-style:none;margin:0 auto;padding:0;max-width:900px;border-top:1.5px solid var(--black)}
@@ -158,6 +189,15 @@ h2 em{font-style:normal}
 @media(max-width:860px){
   .app-grid{grid-template-columns:1fr}
   .app-card{min-height:480px}
+  .app-feature{grid-template-columns:1fr}
+  .feature-art{min-height:240px;border-right:0!important;border-bottom:1.5px solid var(--black)}
+  .feature-copy{padding:24px 20px 28px}
+  .app-feature .card-arrow{top:16px;right:16px}
+  .feature-tile{width:46px;height:46px;font-size:1.4rem;border-width:2px}
+  .feature-tile.ft1{left:8%}
+  .feature-tile.ft2{top:auto;bottom:16%;right:9%}
+  .feature-tile.ft3{left:9%}
+  .feature-tile.ft4{display:none}
   .about-section{grid-template-columns:1fr}
   .about-section>div:first-child,.about-section>.about-copy{padding-left:0;padding-right:0}
   .timeline li{grid-template-columns:1fr;gap:.4rem}

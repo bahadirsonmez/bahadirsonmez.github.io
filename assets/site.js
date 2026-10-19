@@ -28,7 +28,7 @@ nav?.addEventListener('click', e => { if (e.target.closest('a')) setNav(false); 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') setNav(false); });
 
 // Scroll reveals with small staggers inside grids/lists.
-const targets = document.querySelectorAll('.section-heading, .journey-heading, .app-card, .timeline li, .about-section > *, .contact-section > *');
+const targets = document.querySelectorAll('.section-heading, .journey-heading, .app-feature, .app-card, .timeline li, .about-section > *, .contact-section > *');
 targets.forEach(el => {
   el.setAttribute('data-reveal', '');
   const siblings = el.parentElement ? [...el.parentElement.children] : [];
