@@ -173,6 +173,7 @@ h2 em{font-style:normal}
 .contact-section h2{font-size:clamp(3rem,8vw,88px);line-height:.95;letter-spacing:-.05em;color:var(--crimson);margin-bottom:2rem}
 .contact-link{display:inline-flex;align-items:center;gap:.8rem;background:var(--tangerine);color:var(--white);padding:1rem 2.2rem;border-radius:30px;font-size:1.375rem;font-weight:700;transition:transform var(--t) var(--bounce)}
 .contact-link:hover{transform:scale(1.06)}
+@media(max-width:480px){.contact-link{font-size:1.1rem;padding:.9rem 1.5rem;gap:.6rem}}
 .contact-link span{display:inline-block;transition:transform var(--t) var(--ease)}
 .contact-link:hover span{transform:translate(3px,-3px)}
 
